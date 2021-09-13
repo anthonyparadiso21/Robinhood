@@ -101,7 +101,7 @@
           <OutArgument x:TypeArguments="x:String">[jo]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="x:String">shom</InArgument>
+          <InArgument x:TypeArguments="x:String">shosm</InArgument>
         </Assign.Value>
       </Assign>
       <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="859,4931" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://robinhood.com/account">
