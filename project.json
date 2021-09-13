@@ -1,0 +1,67 @@
+{
+  "name": "Robinhood Portfolio",
+  "description": "Blank Process",
+  "main": "NEW5-14.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.11.0-preview]",
+    "UiPath.Mail.Activities": "[1.11.0-preview]",
+    "UiPath.System.Activities": "[21.6.1-preview]",
+    "UiPath.UIAutomation.Activities": "[21.6.1-preview]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "20.10.2.0",
+  "projectVersion": "1.0.15",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "isPausable": true,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "modernBehavior": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Cost Balancing Tab.xaml",
+      "uniqueId": "739710e6-3f16-4148-9766-9c977a79c9c4",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "RebalanceEquity.xaml",
+      "uniqueId": "59a1d323-9a37-49f9-a26f-e97e10c4bfde",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "NEW5-14.xaml",
+      "uniqueId": "28d731c0-eb95-4eca-a7be-908fa312b652",
+      "input": [],
+      "output": []
+    }
+  ],
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Legacy"
+}
