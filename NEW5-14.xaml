@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="NEW5_14" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1204,5307" sap2010:WorkflowViewState.IdRef="NEW5_14_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="NEW5_14" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1046,5407" sap2010:WorkflowViewState.IdRef="NEW5_14_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="31">
       <x:String>System.Activities</x:String>
@@ -35,7 +35,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="58">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="29">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -67,7 +67,7 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="943,5242" sap2010:WorkflowViewState.IdRef="Sequence_9">
+  <Sequence sap:VirtualizedContainerService.HintSize="943,5342" sap2010:WorkflowViewState.IdRef="Sequence_9">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="C:\Users\antwa\Google Drive\Personal\Stocks_Money\Colleen Robinhood Portfolio.xlsx" Name="Colleen" />
       <Variable x:TypeArguments="x:String" Default="C:\Users\antwa\Google Drive\Personal\Stocks_Money\Robinhood Portfolio.xlsx" Name="Anthony" />
@@ -78,43 +78,32 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="NEW5_14" sap:VirtualizedContainerService.HintSize="901,5150" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence DisplayName="NEW5_14" sap:VirtualizedContainerService.HintSize="901,5250" sap2010:WorkflowViewState.IdRef="Sequence_1">
       <Sequence.Variables>
-        <Variable x:TypeArguments="x:Double" Name="cardanoPercent">
-          <Variable.Default>
-            <Literal x:TypeArguments="x:Double" Value="0.12" />
-          </Variable.Default>
-        </Variable>
-        <Variable x:TypeArguments="x:Double" Name="uproPercent">
-          <Variable.Default>
-            <Literal x:TypeArguments="x:Double" Value="0.229" />
-          </Variable.Default>
-        </Variable>
-        <Variable x:TypeArguments="x:Double" Name="udowPercent">
-          <Variable.Default>
-            <Literal x:TypeArguments="x:Double" Value="0.229" />
-          </Variable.Default>
-        </Variable>
-        <Variable x:TypeArguments="x:Double" Name="tqqqPercent">
-          <Variable.Default>
-            <Literal x:TypeArguments="x:Double" Value="0.362" />
-          </Variable.Default>
-        </Variable>
-        <Variable x:TypeArguments="x:Double" Name="CashPercent">
-          <Variable.Default>
-            <Literal x:TypeArguments="x:Double" Value="0.18" />
-          </Variable.Default>
-        </Variable>
+        <Variable x:TypeArguments="x:Double" Default="0.12" Name="cardanoPercent" />
+        <Variable x:TypeArguments="x:Double" Default="0.229" Name="uproPercent" />
+        <Variable x:TypeArguments="x:Double" Default="0.229" Name="udowPercent" />
+        <Variable x:TypeArguments="x:Double" Default="0.362" Name="tqqqPercent" />
+        <Variable x:TypeArguments="x:Double" Default="0.18" Name="CashPercent" />
         <Variable x:TypeArguments="sd:DataTable" Name="actionDT" />
         <Variable x:TypeArguments="x:Boolean" Name="haveCash" />
         <Variable x:TypeArguments="scg:Dictionary(x:String, x:Double)" Default="[new Dictionary (of string,double)]" Name="equity" />
         <Variable x:TypeArguments="scg:Dictionary(x:String, x:String)" Default="[new Dictionary (of string,string)]" Name="equityString" />
+        <Variable x:TypeArguments="x:String" Name="jo" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
+      <Assign sap:VirtualizedContainerService.HintSize="859,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[jo]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">shom</InArgument>
+        </Assign.Value>
+      </Assign>
       <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="859,4931" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="https://robinhood.com/account">
         <ui:OpenBrowser.Body>
           <ActivityAction x:TypeArguments="x:Object">
